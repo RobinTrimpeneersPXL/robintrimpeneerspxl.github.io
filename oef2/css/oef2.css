@@ -1,0 +1,45 @@
+/*Robin Trimpeneers 1TINA
+*/
+
+/*
+    blauw   0090e3
+    geel    f3f5cb
+    wit     white
+*/
+
+
+th, td {
+    margin: 2px;
+    border: 1px solid black;
+}
+table{
+    border: 3px solid black;
+
+}
+
+
+thead {
+    color: white;
+    background-color: #0090e3;
+    font-size: 20pt;
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+}
+
+tbody {
+    color: black;
+    font-size: 18pt;
+    font-family: monospace;
+    text-align: right;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f5cb;
+}
+
+tbody tr:nth-child(1) td:last-child, tbody tr:nth-child(5) td:last-child, tbody tr:nth-child(7) td:last-child {
+    background-color: #f3f5cb;
+}
+
+

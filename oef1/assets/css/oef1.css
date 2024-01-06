@@ -1,0 +1,267 @@
+/*Robin Trimpeneers  */
+
+/*
+    blauw   0090e3
+    oranje  orange
+    geel    f0d10a
+    wit     white
+*/
+/*Elementen*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 1200px;
+    margin-top: 130px;
+    color: black;
+    font-family: serif;
+    font-size: 16px;
+    position: absolute;
+    z-index: 0;
+}
+
+nav {
+    top: 0;
+    font-family: monospace;
+    color: white;
+    background-color: orange;
+    height: 120px;
+    margin: 0;
+    padding-left: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+section {
+    margin: auto;
+    width: 800px;
+    display: flex;
+}
+
+article {
+    margin: 1%;
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    overflow: hidden;
+
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    float: left;
+}
+
+nav a {
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+nav h1 {
+    top: 3px;
+    left: 25px;
+    font-size: 28pt;
+    position: absolute;
+}
+
+article h2 {
+    color: #0090e3;
+}
+
+article figure {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+/*Classes*/
+.hide {
+    display: none;
+}
+
+.icon_cart {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 7px;
+}
+
+.cart_link {
+    display: flex;
+}
+
+.blue {
+    background-color: #0090e3;
+}
+
+.big_rounded_corners {
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.small_rouned_corners {
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.banner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_content {
+    flex: 100%;
+}
+
+.item_recent {
+    width: 110px;
+    margin-right: 15px;
+}
+
+.img_recent {
+    border: 2px dotted #f0d10a;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+.heart {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    background-color: white;
+}
+
+.content_main {
+    width: 25%;
+}
+
+.img_content {
+    width: 100%;
+}
+
+/*id's*/
+
+
+/*Media queries*/
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        top: 150px;
+        margin-left: 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    nav h1 {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: orange;
+        position: unset;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        background-color: #f0d10a;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .content_main {
+        flex: 48%;
+    }
+
+    .icon_cart {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        flex: auto;
+    }
+
+    .recent_content {
+        display: none;
+    }
+
+    .main_content {
+        flex-wrap: wrap;
+        margin-left: 0;
+        flex-direction: row;
+    }
+
+    .img_content {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content_main {
+        flex: 98%;
+    }
+
+    .img_recent {
+        width: 15%;
+    }
+    nav ul li {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}

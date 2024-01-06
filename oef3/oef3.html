@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Robin Trimpeneers-->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+
+</head>
+<body>
+<h1>Bedankt voor je bestelling</h1>
+<form action="bestel.html" method="get">
+    <main>
+        <section>
+            <article class="medium">Lego Trein</article>
+            <article class="large"><img class="bestelling_foto" src="assets/images/train1.jpg" alt="lego trein foto"/></article>
+            <article class="medium"> <label for="legoTrainNumber">aantal</label> <input class="aantalInput" id="legoTrainNumber" name="legoTrainNumber" type="number"> </article>
+        </section>
+        <section>
+            <article class="medium">Lego set</article>
+            <article class="large"><img class="bestelling_foto" src="assets/images/lego1.jpg" alt="lego set foto"/></article>
+            <article class="medium"> <label for="legoSetNumber">aantal</label> <input class="aantalInput" id="legoSetNumber" name="legoSetNumber" type="number"> </article>
+        </section>
+        <section >
+            <article  class="betaalwijze_input">Betaalwijze</article>
+            <article  class="betaalwijze_input"><input type="radio" name="betaalwijze" id="visa" value="visa" checked> <label for="visa"> <img class="betaalwijze_foto" src="assets/images/visa.png" alt="visa logo"/></label>  </article>
+            <article  class="betaalwijze_input"><input type="radio" name="betaalwijze" id="mastercard" value="mastercard"><label for="mastercard"> <img class="betaalwijze_foto" src="assets/images/mastercard.png" alt="mastercard logo"/></label> </article>
+            <article  class="betaalwijze_input"><input type="radio" name="betaalwijze" id="overschrijving" value="overschrijving"><label for="overschrijving"> overschrijving</label> </article>
+        </section>
+        <section id="opmerkingen">
+            <label for="opmerkingenField">Opmerkingen</label>
+            <textarea id="opmerkingenField" rows="10"></textarea>
+        </section>
+        <section>
+            <article class="small"><label for="straat">Straat</label></article>
+            <article class="large"><input name="straatNaam" type="text" id="straat" ></article>
+            <article class="small"><label for="nummer">Nummer</label></article>
+            <article class="small"><input type="text" name="huisNr" class="aantalInput" id="nummer"></article>
+        </section>
+        <section >
+            <input id="submitbutton" type="submit" value="Bestellen">
+        </section>
+    </main>
+
+</form>
+</body>
+</html>
