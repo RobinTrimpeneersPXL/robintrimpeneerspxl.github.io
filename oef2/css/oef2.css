@@ -16,7 +16,10 @@ table{
     border: 3px solid black;
 
 }
-
+td:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 thead {
     color: white;
